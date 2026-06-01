@@ -1,16 +1,8 @@
 # --------------------------------------------------------
-# MTLoRA
-# GitHub: https://github.com/scale-lab/MTLoRA
-# Built upon Swin Transformer (https://github.com/microsoft/Swin-Transformer)
-#
 # Original file:
 # Copyright (c) 2021 Microsoft
 # Licensed under the MIT License
 # Written by Ze Liu
-#
-# Modifications:
-# Copyright (c) 2024 SCALE Lab, Brown University
-# Licensed under the MIT License (see LICENSE for details)
 # --------------------------------------------------------
 
 
