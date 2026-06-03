@@ -1,0 +1,6 @@
+{
+    "semseg": "/path/to/checkpoints/teacher_semseg.pth",
+    "human_parts": "/path/to/checkpoints/teacher_human_parts.pth",
+    "sal": "/path/to/checkpoints/teacher_sal.pth",
+    "normals": "/path/to/checkpoints/teacher_normals.pth"
+}

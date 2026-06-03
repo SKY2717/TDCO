@@ -1,0 +1,5 @@
+{
+    "semseg": "/path/to/checkpoints/teacher_semseg.pth",
+    "normals": "/path/to/checkpoints/teacher_normals.pth",
+    "depth": "/path/to/checkpoints/teacher_depth.pth"
+}
