@@ -17,8 +17,15 @@ This is the official implementation of the paper: [Multi-Teacher Distillation an
 2. **Install the prerequisites**
     - Install `PyTorch>=1.12.0` and `torchvision>=0.13.0` with `CUDA>=11.6`
     - Install dependencies: `pip install -r requirements.txt`
+      
+3. **Dataset download link**
+   We use the same data (PASCAL-Context and NYUD-v2) as ATRC/InvPT. You can download the preprocessed datasets from the following links:
 
-3. **Run the code**
+- **PASCALContext.tar.gz**: [Google Drive](https://drive.google.com/file/d/1r2dXj4eP0L5j2K1f3g4h5i6j7k8l9m0n/view?usp=sharing) *(placeholder, replace with actual link)*
+- **NYUDv2.tar.gz**: [Google Drive](https://drive.google.com/file/d/1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6p7/view?usp=sharing) *(placeholder, replace with actual link)*
+
+
+5. **Run the code**
     ```python
     python -m torch.distributed.launch --nproc_per_node 1 --master_port 12345 main.py --cfg configs/mtlora/tiny_448/<config>.yaml --pascal <path to pascal database> --tasks semseg,normals,sal,human_parts --distill --teacher-paths configs/teachers_pascal.json --batch-size 32 --ckpt-freq=20 --epoch=300    --distill-temp 4.0  --distill-alpha 0.5  --output output/tdco_pascal  --tag tdco_full --resume-backbone <path to the weights of the chosen Swin variant>
     ```
@@ -26,7 +33,7 @@ This is the official implementation of the paper: [Multi-Teacher Distillation an
   
     The outputs will be saved in `output/` folder unless overridden by the argument `--output`.
 
-4. **Eval**
+6. **Eval**
 
     To evaluate, use `--eval` and `--resume <checkpoint>` as follows:
     ```python
