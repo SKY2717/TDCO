@@ -21,8 +21,8 @@ This is the official implementation of the paper: [Multi-Teacher Distillation an
 3. **Dataset download link**
    We use the same data (PASCAL-Context and NYUD-v2) as ATRC/InvPT. You can download the preprocessed datasets from the following links:
 
-- **PASCALContext.tar.gz**: [Google Drive](https://drive.google.com/file/d/1r2dXj4eP0L5j2K1f3g4h5i6j7k8l9m0n/view?usp=sharing) *(placeholder, replace with actual link)*
-- **NYUDv2.tar.gz**: [Google Drive](https://drive.google.com/file/d/1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6p7/view?usp=sharing) *(placeholder, replace with actual link)*
+- **PASCALContext.tar.gz**: [Google Drive](https://cs.stanford.edu/~roozbeh/pascal-context/) 
+- **NYUDv2.tar.gz**: [Google Drive]([https://drive.google.com/file/d/1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6p7/view?usp=sharing](https://cs.nyu.edu/~fergus/datasets/nyu_depth_v2.html)) 
 
 
 5. **Run the code**
