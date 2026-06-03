@@ -27,7 +27,7 @@ This is the official implementation of the paper: [Multi-Teacher Distillation an
 
 5. **Run the code**
     ```python
-    python -m torch.distributed.launch --nproc_per_node 1 --master_port 12345 main.py --cfg configs/mtlora/tiny_448/<config>.yaml --pascal <path to pascal database> --tasks semseg,normals,sal,human_parts --distill --teacher-paths configs/teachers_pascal.json --batch-size 32 --ckpt-freq=20 --epoch=300    --distill-temp 4.0  --distill-alpha 0.5  --output output/tdco_pascal  --tag tdco_full --resume-backbone <path to the weights of the chosen Swin variant>
+    torchrun --nproc_per_node 1 --master_port 12345 main.py --cfg configs/mtlora/tiny_448/<config>.yaml --pascal <path to pascal database> --tasks semseg,normals,sal,human_parts --distill --teacher-paths configs/teachers_pascal.json --batch-size 32 --ckpt-freq=20 --epoch=300    --distill-temp 4.0  --distill-alpha 0.5  --output output/tdco_pascal  --tag tdco_full --resume-backbone <path to the weights of the chosen Swin variant>
     ```
     Swin variants and their weights can be found at the official [Swin Transformer repository](https://github.com/microsoft/Swin-Transformer). 
   
